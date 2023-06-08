@@ -1,0 +1,227 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html class="no-js" lang="zxx">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Artık Artığa Son</title>
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="~/take_away/hotte-main/favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="~/take_away/hotte-main/favicon.ico" type="image/x-icon" />
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700;800&family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+    <!-- Icofont CSS -->
+    <link rel="stylesheet" href="~/take_away/hotte-main/css/icofont.min.css" />
+    <!-- Slick CSS -->
+    <link rel="stylesheet" href="~/take_away/hotte-main/css/slick.css" />
+    <link rel="stylesheet" href="~/take_away/hotte-main/css/slick-theme.css" />
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="~/take_away/hotte-main/css/bootstrap.min.css" />
+    <!-- Venobox CSS -->
+    <link rel="stylesheet" href="~/take_away/hotte-main/css/venobox.min.css" />
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="~/take_away/hotte-main/css/style.css" />
+    <!-- Responsive CSS -->
+    <link rel="stylesheet" href="~/take_away/hotte-main/css/responsive.css" />
+</head>
+<body>
+    @*Goto TOP*@
+    <div id="top-btn">
+        <button class="btn top-btn"><i class="icofont-arrow-up"></i></button>
+    </div>
+    @*Preloader*@
+    <div class="preloader-wrap">
+        <div class="preloader">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+    @*HEADER PART START*@
+    <header>
+        <div class="header py-1">
+            <div class="container">
+                <nav class="navbar navbar-expand-lg navbar-light px-0 py-0">
+                    <a class="navbar-brand" href="~/AAS/Index">
+                        <div class="logo">
+                            <img src="~/take_away/hotte-main/img/logo.png" class="w-100 img-fluid" alt="" />
+                        </div>
+                    </a>
+
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="icofont-navigation-menu"></i>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav navbar-custom">
+                            <li class="nav-item">
+                                <a class="nav-link" href="~/AAS/Index">Anasayfa </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="~/AAS/About">Hakkımızda</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="~/AAS/Ilanlar">İlanlar</a>
+                            </li>
+                            <li class="nav-item dropdown active">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Diğer
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="blog.html">İlan Ekle</a>
+                                    <a class="dropdown-item" href="singlepost.html">Restoran Kayıt</a>
+                                </div>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="~/AAS/Contact">Bizimle İletişime Geç</a>
+                            </li>
+
+                            <li class="nav-item last-menu-bg">
+                                <span class="nav-link"><a href="~/Login/girisYap">Giriş Yap</a></span>
+                            </li>
+                            <li class="nav-item last-menu-bg">
+                                <span class="nav-link"><a href="~/Register/uyeOl">Üye Ol</a></span>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+    @*HEADER PART END
+    HOME HERO SECTION START*@
+
+    <div>
+        @RenderBody()
+    </div>
+    <!--FOOTER TOP SECTION START-->
+    <div class="footer-top">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4">
+                    <div class="footer-top-content">
+                        <div class="logo">
+                            <img src="~/take_away/hotte-main/img/logo.png" class="w-100 img-fluid" alt="" />
+                        </div>
+                        <p style="margin-top:20px;">Artığa Son 2023 yılında kurulmuş hiçbir kuruma veya kuruluşa bağlı olmayan özel bir firmadır.</p>
+                        <span>Artığa Son özel bir kuruluş olup, içeriklerinin hiçbiri izinsiz kopyalanamaz veya kullanılamaz.</span>
+                        <ul class="social-icon-list">
+                            <li>
+                                <a href="#"><i class="icofont-facebook"></i></a>
+                            </li>
+                            <li class="social-icon custom-icon-pinterest">
+                                <a href="#"><i class="icofont-pinterest"></i></a>
+                            </li>
+                            <li class="social-icon custom-icon-dribbble">
+                                <a href="#"><i class="icofont-dribbble"></i></a>
+                            </li>
+                            <li class="social-icon custom-icon-twitter">
+                                <a href="#"><i class="icofont-twitter"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3" style="margin-left:320px;">
+                    <div class="contact-content">
+                        <h3>İletişim Bilgileri</h3>
+                        <img src="~/take_away/hotte-main/img/border.png" alt="" />
+                        <div class="contact-info d-flex align-items-center">
+                            <div class="icon"><i class="icofont-phone"></i></div>
+                            <div class="info">
+                                <a href="#">0533 377 83 56</a>
+                                <a href="#">0553 435 55 12</a>
+                            </div>
+                        </div>
+                        <div class="contact-info d-flex align-items-center">
+                            <div class="icon"><i class="icofont-email"></i></div>
+                            <div class="info">
+                                <a href="#">artıkartıgason@gmail.com</a>
+                                <a href="#">israfionle@gmail.com</a>
+                            </div>
+                        </div>
+                        <div class="contact-info d-flex align-items-center">
+                            <div class="icon"><i class="icofont-google-map"></i></div>
+                            <div class="info">
+                                <a href="#">Emniyet, Milas Sk. No:30, 06560 Yenimahalle/Ankara</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                
+            </div>
+        </div>
+    </div>
+    <!--FOOTER TOP SECTION END-->
+    <!--FOOTER BOTTOM START-->
+    <div class="footer-bootom">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-7 col-lg-7 col-xl-7">
+                    <div class="copyright-txt">
+                        <p>Copyright 2020. All Rights Reserved.</p>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-12 col-md-5 col-lg-5 col-xl-5">
+                    <div class="terms">
+                        <span><a href="#">Terms & Conditions</a> | <a href="#">Privacy Policy</a></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--FOOTER BOTTOM END-->
+    <!-- jQuery File-->
+    <script src="~/take_away/hotte-main/js/jquery-3.5.1.min.js"></script>
+    <!-- Popper JS -->
+    <script src="~/take_away/hotte-main/js/popper.min.js"></script>
+    <!-- Slick JS -->
+    <script src="~/take_away/hotte-main/js/slick.min.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="~/take_away/hotte-main/js/bootstrap.min.js"></script>
+    <!-- Venobox JS -->
+    <script src="~/take_away/hotte-main/js/venobox.min.js"></script>
+    <!-- main.js -->
+    <script src="~/take_away/hotte-main/js/main.js"></script>
+
+    <script>
+        $(".testimonial-slider").slick({
+            autoplay: true,
+            autoplaySpreed: 7000,
+            arrows: true,
+            prevArrow: '<i class="icofont-arrow-left"></i>',
+            nextArrow: '<i class="icofont-arrow-right"></i>',
+            responsive: [
+                {
+                    breakpoint: 1024,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1,
+                        infinite: true,
+                    },
+                },
+                {
+                    breakpoint: 600,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1,
+                    },
+                },
+                {
+                    breakpoint: 480,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1,
+                    },
+                },
+            ],
+        });
+    </script>
+</body>
+</html>

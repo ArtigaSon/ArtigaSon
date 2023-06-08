@@ -1,0 +1,67 @@
+﻿@model ArtıkArtığaSon.Models.Sınıflar.Ilan
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_AASLayout.cshtml";
+}
+
+<div class="background" style="background-color:#000000; height:106px;">   </div>
+<div class="reservation-form">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                <div class="reservation-head text-center">
+                    <h2 style="margin-left:45px">İlan Ekle</h2>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="form">
+                <div class="col-xs-12 col-sm-12 col-md-10 col-lg-8 col-xl-8 m-auto">
+                    <div class="uyeOl">
+                        <form action="#" method="post">
+                            <div class="tab">
+                                <ul class="nav nav-pills custom-nav mb-3" id="pills-tab" role="tablist">
+                                    <li class="nav-item" role="presentation" style="">
+                                        <a class="nav-link show active custom-nav-link" id="thestory-tab kullanici" data-toggle="pill" href="#thestory" role="tab" aria-controls="thestory-tab" aria-selected="true">İlan Ekleme </a>
+                                    </li>
+                                </ul>
+                                <div class="tab-content" id="pills-tabContent">
+                                    <div class="tab-pane custom-tab-pane text-center show active" id="thestory" role="tabpanel" aria-labelledby="thestory-tab">
+                                        <div class="form-row custom-form">
+                                            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 mt-5">
+                                                <h4>İlan Bilgileriniz</h4>
+                                            </div>
+
+                                            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 mt-3">
+                                                @Html.LabelFor(x => x.IlanTarih, "İlan Tarihi")
+                                                @Html.TextBoxFor(x => x.IlanTarih, new { @class = "form-control reservation-input" })
+                                            </div>-->
+                                              
+                                            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 mt-3">
+                                                    @Html.LabelFor(x => x.IlanSaat, "İlan Saati")
+                                                    @Html.TextBoxFor(x => x.IlanSaat, new { @class = "form-control reservation-input" })
+                                                </div>
+                                                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 mt-3">
+                                                    @Html.LabelFor(x => x.IlanAdet, "İlan Adedi")
+                                                    @Html.TextBoxFor(x => x.IlanAdet, new { @class = "form-control reservation-input" })
+                                                </div>
+                                                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 mt-3">
+                                                    @Html.LabelFor(x => x.IlanUrunAdi, "İlan Ürün Adı")
+                                                    @Html.TextBoxFor(x => x.IlanUrunAdi, new { @class = "form-control reservation-input" })
+                                                </div>
+                                                <div class="col-12 text-center mt-5">
+                                                    <button>İlan Ekle</button>
+                                            </div>
+                                        </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>

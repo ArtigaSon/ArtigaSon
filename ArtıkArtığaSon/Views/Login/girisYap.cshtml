@@ -1,0 +1,95 @@
+﻿
+@{
+    ViewBag.Title = "girisYap";
+    Layout = "~/Views/Shared/_AASLayout.cshtml";
+}
+
+
+<head>
+    <title>Giris Yap</title>
+</head>
+
+
+
+<!-- RESERVATION FROM SECTION START -->
+
+<div class="background" style="background-color:#000000; height:106px;">   </div>
+<div class="about_section login">
+    <div class="container login-container">
+        <div class="row align-items-center">
+            <div class="col-xs-12 col-sm-12 col-md-7 col-lg-6 col-xl-6">
+                <div class="img-donat">
+                    <img src="~/take_away/hotte-main/img/donut2.png" class="img-fluid" alt="" />
+                </div>
+                <div class="img-cutlary">
+                    <img src="~/take_away/hotte-main/img/cutlery.png" class="img-fluid" alt="" />
+                </div>
+                <div class="tab">
+                    <ul class="nav nav-pills custom-nav mb-3" id="pills-tab" role="tablist">
+                        <li class="nav-item" role="presentation" style="margin-right:70px">
+                            <a class="nav-link show active custom-nav-link" id="thestory-tab" data-toggle="pill" href="#thestory" role="tab" aria-controls="thestory-tab" aria-selected="true">Kullanıcı Girişi </a>
+                        </li>
+
+                        <li class="nav-item" role="presentation">
+                            <a class="nav-link custom-nav-link" id="our-vission-tab" data-toggle="pill" href="#our-vission" role="tab" aria-controls="our-vission" aria-selected="false" style="width:150px">Restoran Girişi</a>
+                        </li>
+                    </ul>
+                    <form method="post">
+
+                        <div class="tab-content" id="pills-tabContent">
+                            <div class="tab-pane custom-tab-pane text-center show active" id="thestory" role="tabpanel" aria-labelledby="thestory-tab">
+                                <div class="form-row custom-form">
+                                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 mt-5" style="padding-bottom:5px">
+                                        <h4>Kişisel Bilgileriniz</h4>
+                                    </div>
+
+
+                                    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 mt-3" style="width:230px">
+                                        <label for="email">E-Posta</label>
+                                        <input type="email" class="form-control reservation-input" id="Mail" name="Mail" placeholder="kullanıcı@gmail.com" />
+                                    </div>
+                                    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 mt-3">
+                                        <label for="password">Şifre</label>
+                                        <input type="password" class="form-control reservation-input" id="Sifre" name="Sifre" placeholder="*********" />
+                                    </div>
+                                    <div class="col-12 text-center mt-5">
+                                        <button>Giriş Yap</button>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <div class="tab-pane fade custom-tab-pane text-center" id="our-vission" role="tabpanel" aria-labelledby="our-vission-tab">
+                                <div class="form-row custom-form">
+                                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 mt-5" style="padding-bottom:5px">
+                                        <h4>Restoran Bilgileriniz</h4>
+                                    </div>
+
+
+                                    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 mt-3" style="width:230px">
+                                        <label for="email">E-Posta</label>
+                                        <input type="email" class="form-control reservation-input" id="email" name="email" placeholder="restoran@gmail.com" />
+                                    </div>
+                                    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 mt-3">
+                                        <label for="password">Şifre</label>
+                                        <input type="password" class="form-control reservation-input" id="password" name="address" placeholder="*********" />
+                                    </div>
+
+                                </div>
+                                <div class="col-12 text-center mt-5">
+                                    <button>Giriş Yap</button>
+                                </div>
+
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                </div>
+            </div>
+
+            
+        </div>
+    </div>
+</div>
+
+<!-- RESERVATION FROM SECTION END -->
